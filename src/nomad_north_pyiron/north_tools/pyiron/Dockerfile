@@ -1,8 +1,10 @@
-ARG IMAGE_TAG=main
-ARG BASE_IMAGE=ghcr.io/fairmat-nfdi/nomad-north-jupyter
-ARG PLUGIN_NAME=nomad-north-pyiron
+### THIS IS NOT IN USE; WE ARE USING THE PYIRON IMAGE DIRECTLY"
 
-FROM ${BASE_IMAGE}:${IMAGE_TAG} AS base
+# ARG IMAGE_TAG=main
+# ARG BASE_IMAGE=ghcr.io/fairmat-nfdi/nomad-north-jupyter
+# ARG PLUGIN_NAME=nomad-north-pyiron
+
+# FROM ${BASE_IMAGE}:${IMAGE_TAG} AS base
 
 # This Dockerfile intentionally only selects a NORTH base image.
 #

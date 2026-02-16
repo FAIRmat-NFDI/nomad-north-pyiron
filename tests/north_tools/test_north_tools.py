@@ -5,6 +5,6 @@ def test_importing_north_tool():
     )
 
     assert (
-        north_tool_entry_point.id_url_safe == 'nomad_north_pyiron_pyiron'
-        or north_tool_entry_point.id == 'nomad-north-nomad-north-pyiron'
+        north_tool_entry_point.id_url_safe == 'nomad_north_pyiron'
+        or north_tool_entry_point.id == 'nomad-north-pyiron'
     ), 'NORTHtool entry point has incorrect id or id_url_safe'

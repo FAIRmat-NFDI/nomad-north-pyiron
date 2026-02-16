@@ -1,1 +1,1 @@
-graft src/nomad_north_pyiron/example_uploads
+graft src/nomad_north_pyiron/north_tools/pyiron
