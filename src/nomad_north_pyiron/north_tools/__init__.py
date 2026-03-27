@@ -16,7 +16,7 @@
 # limitations under the License.
 #
 from nomad.config.models.north import NORTHTool
-from nomad.config.models.plugins import NORTHToolEntryPoint
+from nomad.config.models.plugins import NorthToolEntryPoint
 
 pyiron_north_tool = NORTHTool(
     image='pyiron/pyiron:latest',
@@ -40,4 +40,4 @@ pyiron_north_tool = NORTHTool(
     display_name='Pyiron',
 )
 
-pyiron = NORTHToolEntryPoint(id_url_safe='pyiron', north_tool=pyiron_north_tool)
+pyiron = NorthToolEntryPoint(id_url_safe='pyiron', north_tool=pyiron_north_tool)
