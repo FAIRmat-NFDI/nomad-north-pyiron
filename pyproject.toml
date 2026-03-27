@@ -52,7 +52,7 @@ north = [
 extra-index-url = [
   "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple",
 ]
-    
+
 [tool.ruff]
 # Exclude a variety of commonly ignored directories.
 exclude = [
@@ -134,12 +134,7 @@ where = ["src"]
 
 [project.entry-points.'nomad.plugin']
 
-
-
-
-
-
-north_tool_entry_point = "nomad_north_pyiron.north_tools.pyiron:north_tool_entry_point"
+north_tool_entry_point = "nomad_north_pyiron.north_tools:pyiron"
 [tool.cruft]
 # Avoid updating workflow files, this leads to permissions issues
 skip = [".github/*"]
