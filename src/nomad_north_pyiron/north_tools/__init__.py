@@ -15,3 +15,29 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+from nomad.config.models.north import NORTHTool
+from nomad.config.models.plugins import NorthToolEntryPoint
+
+pyiron_north_tool = NORTHTool(
+    image='pyiron/pyiron:latest',
+    description="""### **Pyiron**: Complex workflows made easy
+
+    From rapid prototyping to high performance computing in materials science.
+    [Homepage](https://pyiron.org/).""",
+    short_description='Jupyterlab with pyiron installed',
+    external_mounts=[],
+    file_extensions=['ipynb'],
+    icon='https://raw.githubusercontent.com/FAIRmat-NFDI/nomad-north-pyiron/refs/heads/main/src/nomad_north_pyiron/north_tools/pyiron/pyiron.png',
+    image_pull_policy='Always',
+    default_url='/lab',
+    maintainer=[
+        {'email': 'lukas.pielsticker@physik.hu-berlin.de', 'name': 'Lukas Pielsticker'}
+    ],
+    mount_path='/home/jovyan',
+    path_prefix='lab/tree',
+    privileged=False,
+    with_path=True,
+    display_name='Pyiron',
+)
+
+pyiron = NorthToolEntryPoint(id_url_safe='pyiron', north_tool=pyiron_north_tool)
