@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: 'nomad-north-pyiron: A NOMAD plugin for the pyiron software'
+version: 0.1.0
+message:
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Lukas
+    family-names: Pielsticker
+    orcid: 'https://orcid.org/0000-0000-0000-0000'
+doi: 10.5281/zenodo.0000000
+repository-code: https://github.com/FAIRmat-NFDI/nomad-north-pyiron
+url: https://zenodo.org/records/0000000
+keywords:
+  - keyword1
+abstract:
+  This is the NORTH tool for the pyiron software package. 
+  It is a plugin for the NOMAD platform that allows users to run pyiron calculations
+  and manage their data within the NOMAD ecosystem.
+license: Apache-2.0

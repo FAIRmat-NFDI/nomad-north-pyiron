@@ -1,8 +1,9 @@
 def test_importing_north_tool():
-    # this will raise an exception if pydantic model validation fails for the north tool
-    from nomad_north_pyiron.north_tools import pyiron
-
+    # this will raise an exception if pydantic model validation fails
+    from nomad_north_pyiron.north_tools import north_entry_point
+ 
+    expected_id = 'nomad-north-pyiron-pyiron'
     assert (
-        pyiron.id_url_safe == 'pyiron'
-        or pyiron.id == 'nomad_north_pyiron.north_tools:pyiron'
-    ), 'NORTHtool entry point has incorrect id or id_url_safe'
+        north_entry_point.id_url_safe == expected_id
+        or north_entry_point.id == 'nomad-north-nomad-north-pyiron'
+    ), 'NORTHTool entry point has incorrect id or id_url_safe'

@@ -4,7 +4,7 @@ This directory contains the configuration for the pyiron NORTH (NOMAD Remote Too
 
 ## Quick start
 
-The pyiron NORTH tool provides a containerized environment defined in `NORTHtool` definition and a `NorthToolEntryPoint`.
+The pyiron NORTH tool provides a containerized environment defined in `NORTHtool` definition and a `NORTHToolEntryPoint`.
 
 ## Documentation
 

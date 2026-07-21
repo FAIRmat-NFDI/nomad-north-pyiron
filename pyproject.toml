@@ -25,7 +25,7 @@ maintainers = [
 ]
 license = { file = "LICENSE" }
 dependencies = [
-    "nomad-lab>=1.4.1"
+    "nomad-lab>=1.4.3"
 ]
 
 [project.urls]
@@ -133,8 +133,8 @@ package-dir = { "" = "src" }
 where = ["src"]
 
 [project.entry-points.'nomad.plugin']
+north_tool_entry_point = "nomad_north_pyiron.north_tools:north_entry_point"
 
-north_tool_entry_point = "nomad_north_pyiron.north_tools:pyiron"
 [tool.cruft]
 # Avoid updating workflow files, this leads to permissions issues
 skip = [".github/*"]

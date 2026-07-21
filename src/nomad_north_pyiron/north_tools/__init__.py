@@ -18,26 +18,27 @@
 from nomad.config.models.north import NORTHTool
 from nomad.config.models.plugins import NorthToolEntryPoint
 
-pyiron_north_tool = NORTHTool(
-    image='pyiron/pyiron:latest',
-    description="""### **Pyiron**: Complex workflows made easy
+from nomad.config.models.north import NORTHTool
+from nomad.config.models.plugins import NORTHToolEntryPoint
 
-    From rapid prototyping to high performance computing in materials science.
-    [Homepage](https://pyiron.org/).""",
-    short_description='Jupyterlab with pyiron installed',
+pyiron = NORTHTool(
+    short_description='Jupyter Notebook server in NOMAD NORTH for NOMAD plugin nomad-north-pyiron.',
+    image='ghcr.io/fairmat-nfdi/nomad-north-pyiron:main',
+    description='Jupyter Notebook server in NOMAD NORTH for NOMAD plugin nomad-north-pyiron.',
     external_mounts=[],
     file_extensions=['ipynb'],
-    icon='https://raw.githubusercontent.com/FAIRmat-NFDI/nomad-north-pyiron/refs/heads/main/src/nomad_north_pyiron/north_tools/pyiron/pyiron.png',
+    icon='logo/jupyter.svg',
     image_pull_policy='Always',
     default_url='/lab',
-    maintainer=[
-        {'email': 'lukas.pielsticker@physik.hu-berlin.de', 'name': 'Lukas Pielsticker'}
-    ],
+    maintainer=[{'email': 'lukas.pielsticker@physik.hu-berlin.de', 'name': 'Lukas Pielsticker'}],
     mount_path='/home/jovyan',
     path_prefix='lab/tree',
     privileged=False,
     with_path=True,
-    display_name='Pyiron',
+    display_name='pyiron',
 )
 
-pyiron = NorthToolEntryPoint(id_url_safe='pyiron', north_tool=pyiron_north_tool)
+north_entry_point = NORTHToolEntryPoint(
+    id_url_safe='nomad-north-pyiron-pyiron',
+    north_tool=pyiron,
+)
