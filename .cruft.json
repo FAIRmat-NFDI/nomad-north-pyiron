@@ -11,7 +11,7 @@
       "module_name": "nomad_north_pyiron",
       "short_description": "NOMAD NORTH plugin for pyiron",
       "version": "0.1.0",
-      "license": "Apache Software License 2.0",
+      "license": "MIT",
       "include_schema_package": false,
       "include_normalizer": false,
       "include_parser": false,
