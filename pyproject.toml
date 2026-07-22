@@ -19,9 +19,11 @@ readme = "README.md"
 requires-python = ">=3.10"
 authors = [
     { name = "Lukas Pielsticker", email = "lukas.pielsticker@physik.hu-berlin.de" },
+    { name = "Lauri Himanen", email = "lauri.himanen@physik.hu-berlin.de" },
 ]
 maintainers = [
     { name = "Lukas Pielsticker", email = "lukas.pielsticker@physik.hu-berlin.de" },
+    { name = "Lauri Himanen", email = "lauri.himanen@physik.hu-berlin.de" },
 ]
 license = { file = "LICENSE" }
 dependencies = [
