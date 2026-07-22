@@ -26,7 +26,7 @@ jobs:
         uses: astral-sh/setup-uv@v5
         with:
           python-version: ${{ env.PYTHON_VERSION }}
-      # No need to build the image as we use the default pyiron Docker image
+      # No need to overwrite the image tag as we use the default pyiron Docker image
       # - name: Overwrite the image tag
       #   run: |
       #     IMAGE_TAG=$(grep -oP "${{ env.IMAGE }}:\K[^'\",]+" src/nomad_north_jupyter/north_tools/__init__.py)

@@ -14,7 +14,7 @@ classifiers = [
 ]
 name = "nomad-north-pyiron"
 description = "NOMAD NORTH plugin for pyiron"
-version = "0.1.0"
+dynamic = ["version"]
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
@@ -133,7 +133,7 @@ package-dir = { "" = "src" }
 where = ["src"]
 
 [project.entry-points.'nomad.plugin']
-north_tool_entry_point = "nomad_north_pyiron.north_tools:north_entry_point"
+pyiron = "nomad_north_pyiron.north_tools:pyiron"
 
 [tool.cruft]
 # Avoid updating workflow files, this leads to permissions issues

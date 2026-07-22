@@ -8,14 +8,19 @@ type: software
 authors:
   - given-names: Lukas
     family-names: Pielsticker
-    orcid: 'https://orcid.org/0000-0000-0000-0000'
+    orcid: 'https://orcid.org/0000-0001-9361-8333'
 doi: 10.5281/zenodo.0000000
 repository-code: https://github.com/FAIRmat-NFDI/nomad-north-pyiron
 url: https://zenodo.org/records/0000000
 keywords:
-  - keyword1
+  - pyiron
+  - NOMAD
+  - workflows
 abstract:
-  This is the NORTH tool for the pyiron software package. 
-  It is a plugin for the NOMAD platform that allows users to run pyiron calculations
-  and manage their data within the NOMAD ecosystem.
+  nomad-north-pyiron is a plugin for the NOMAD platform that provides a 
+  NORTH tool for the [pyiron software package](https://pyiron.org/). 
+  It allows users to run pyiron calculations and manage the resulting
+  data within the NOMAD ecosystem. 
+  It is a plugin for the NOMAD platform that allows users to run pyiron
+  calculations and manage their data within the NOMAD ecosystem.
 license: Apache-2.0

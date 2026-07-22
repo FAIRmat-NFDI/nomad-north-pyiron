@@ -1,4 +1,4 @@
-### THIS IS NOT IN USE; WE ARE USING THE PYIRON IMAGE DIRECTLY"
+### THIS IS NOT IN USE; WE ARE USING THE PYIRON IMAGE DIRECTLY (pyiron/pyiron:latest) INSTEAD. ###
 
 # ARG IMAGE_TAG=main
 # ARG BASE_IMAGE=ghcr.io/fairmat-nfdi/nomad-north-jupyter
