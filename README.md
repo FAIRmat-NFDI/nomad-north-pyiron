@@ -1,3 +1,12 @@
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+![](https://github.com/FAIRmat-NFDI/nomad-north-pyiron/actions/workflows/pytest.yml/badge.svg)
+![](https://github.com/FAIRmat-NFDI/nomad-north-pyiron/actions/workflows/pylint.yml/badge.svg)
+![](https://github.com/FAIRmat-NFDI/nomad-north-pyiron/actions/workflows/publish.yml/badge.svg)
+![](https://img.shields.io/pypi/pyversions/nomad-north-pyiron)
+![](https://img.shields.io/pypi/l/nomad-north-pyiron)
+![](https://img.shields.io/pypi/v/nomad-north-pyiron)
+[![DOI](https://zenodo.org/badge/1159039088.svg)](https://doi.org/10.5281/zenodo.21486955)
+
 # nomad-north-pyiron
 
 This is the NOMAD NORTH plugin for [`pyiron`](https://pyiron.org/).
@@ -137,3 +146,9 @@ We use [`cruft`](https://github.com/cruft/cruft) to update the project based on 
 | Name | E-mail     |
 |------|------------|
 | Lukas Pielsticker | [lukas.pielsticker@physik.hu-berlin.de](mailto:lukas.pielsticker@physik.hu-berlin.de)
+| Lauri Himanen | [lauri.himanen@physik.hu-berlin.de](mailto:lauri.himanen@physik.hu-berlin.de)
+
+
+# How to cite this work
+
+Pielsticker, L., Himanen, L. (2026). nomad-north-pyiron: A NOMAD plugin for the pyiron software (2026). Zenodo. https://doi.org/10.5281/zenodo.21487119
